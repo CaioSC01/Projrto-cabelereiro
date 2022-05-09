@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OriginSix</title>
+    <title>Estudo Cabeleireiro</title>
     <!-- Icons -->
     <link rel="stylesheet" href="assets/Fonts/style.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- Style -->
     <link rel="stylesheet" href="Style.css" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
     />
   </head>
   <body>
@@ -38,6 +43,7 @@
     </header>
 
     <main>
+      <!-- HOME -->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -59,6 +65,7 @@
 
       <div class="divider-1"></div>
 
+      <!-- ABOUT -->
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
@@ -92,12 +99,15 @@
           </div>
         </div>
       </section>
+
       <div class="divider-2"></div>
+
+      <!-- SERVICES -->
       <section class="section" id="services">
         <div class="container grid">
           <header>
             <h2 class="title">Serviços</h2>
-            <p>
+            <p class="subtitle">
               Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
               conquistou clientes de inúmeros países com seus tratamentos
               exclusivos e totalmente naturais
@@ -137,8 +147,130 @@
           </div>
         </div>
       </section>
-    </main>
+      <div class="divider-1"></div>
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img src="assets/image/4.jpg" alt="Foto de Wanessa Souza" />
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
 
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/image/0.jpg"
+                      alt="Foto de Franciele Venega"
+                    />
+                    Franciele Venega
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/image/5.jpg"
+                      alt="Fotos de Valeska Fabris"
+                    />
+                    Valeska Fabris
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- CONTACTS -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              fugit ab qui nobis eos ducimus unde? Molestias sint, sequi autem
+              exercitationem distinctio, nemo adipisci temporibus, reiciendis
+              accusantium unde eaque nobis.
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=+5511930130937&text=Oi! Gostaria de agendar um horário"" class="button" target="blanck"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 011 0000-0000</li>
+              <li><i class="icon-map-pin"></i> R kyalame,69</li>
+              <li><i class="icon-mail"></i> Caio180g@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+    
+    </main>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Beauty<span>salon</span>.</a>
+          <p>2022 Beautysalon.</p>
+          <p>Todos od direitos reservados.</p>
+        </div>
+        <div class="social ">
+          <a href="https://instagram.com" target="_blanck"><i class="icon-instagram"></i></a>
+          <a href="https://facebook.com" target="_blanck"><i class="icon-facebook"></i></a>
+          <a href="https://youtube.com" target="_blanck"><i class="icon-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main.js -->
     <script src="main.js"></script>
   </body>
 </html>
